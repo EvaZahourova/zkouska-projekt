@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <base href="/localhost"/>
+    <meta charset="utf-8" />
+    <title>Editor pojištěnců</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <h1>PojištěníApp</h1>
+    <nav>
+        <ul><li><a href="novy-pojistenec">Nový Pojištěnec</a></li>
+            <li><a href="pojistenci">Pojištěnci</a></li>
+            <li>O aplikaci</li>
+        </ul>
+    </nav>
+    </header>
+    <br clear="both" />
+    <article>
+        <?php $this->kontroler->vypisPohled(); ?>
+    </article>
+    <footer>
+        <p>Vytvořila Eva Žahourová v kurzu od <a href="http://www.itnetwork.cz" target="_blank">ITnetwork</a>.</p>
+    </footer>
+</body>
+</html>

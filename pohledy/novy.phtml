@@ -1,0 +1,22 @@
+<h2>Nový pojištěnec</h2>
+<img src="obrazky/new.png" class="vlevo">
+<form method="POST">
+    <table>
+        <tr>
+            <td>Jméno</td>
+            <td>Příjmení</td>
+        </tr>
+        <tr>
+            <td><input name="jmeno" type="text" value="<?= $pojistenec['jmeno'] ?>" /></td>
+            <td><input name="prijmeni" type="text" value="<?= $pojistenec['prijmeni'] ?>" /></td>
+        </tr>
+        <tr>
+            <td>Věk</td>
+            <td>Telefon</td>
+        </tr>
+        <tr>
+            <td><input name="vek" type="text" value="<?= $pojistenec['vek'] ?>" /></td>
+            <td><input name="telefon" type="text" value="<?= $pojistenec['telefon'] ?>" /></td>
+    </table>       
+    <input type="submit" value="Uložit" />
+</form>

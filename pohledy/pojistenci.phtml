@@ -1,0 +1,18 @@
+<h2>Pojištěnci</h2>
+<table class="ohraniceni">
+    <thead><tr>
+        <th class="ohraniceni">Jméno a příjmení</th>
+        <th class="ohraniceni">Telefon</th>
+        <th class="ohraniceni">Věk</th>
+    </tr></thead>
+    <?php
+        foreach ($pojistenci as $pojistenec) : ?>
+        <tbody>
+            <tr>
+             <td class="ohraniceni"><?= $pojistenec['jmeno'] . ' ' . $pojistenec['prijmeni'] ?></td>
+             <td class="ohraniceni"><?= $pojistenec['telefon'] ?></td>
+             <td class="ohraniceni"><?= $pojistenec['vek'] ?></td>
+            </tr>
+        </tbody>
+    <?php endforeach ?>
+</table>
